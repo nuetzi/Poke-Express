@@ -7,6 +7,7 @@ class Index extends React.Component {
         const myStyle = {
         color: '#ffffff',
         backgroundColor: '#000000',
+        textTransform: 'capitalize'
          };     
         return (
           <div style={myStyle}>
