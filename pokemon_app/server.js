@@ -21,9 +21,8 @@ app.get('/pokemon/new', (req, res) => {
 });
 
 app.post('/pokemon/', (req, res)=>{
-    pokemon.create(req.body, (error, createdFruit)=>{
-        res.redirect('/fruits');
-    });
+    pokemon.push(req.body);
+    res.redirect('/pokemon');
 });
 
 app.get('/pokemon/:id', (req, res) => {
