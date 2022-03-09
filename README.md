@@ -15,5 +15,6 @@ User Stories
 
 Assignment
 
+    Add A Seed Route to Pokemon that adds the entire original pokemon array
     Add Edit, Update and Delete functionality to your pokemon app
     Deploy your Pokemon App to Heroku at it's final complete form
