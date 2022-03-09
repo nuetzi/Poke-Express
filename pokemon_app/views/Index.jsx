@@ -17,12 +17,15 @@ class Index extends React.Component {
                         return (
                             <li>
                             <a href={`/pokemon/${i}`}>
-                            {pokemon.name}
+                            { pokemon.name }
                             </a>
                             </li>
                         );
                     })}
                 </ul>
+                <nav>
+                    <a href="/pokemon/new">Add a Pokemon</a>
+                </nav>
             </div>
           )  
      }

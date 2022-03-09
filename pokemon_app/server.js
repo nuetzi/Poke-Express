@@ -16,6 +16,16 @@ app.get('/pokemon', (req, res) => {
     res.render('Index', { pokemon: pokemon });
 });
 
+app.get('/pokemon/new', (req, res) => {
+    res.render('New');
+});
+
+app.post('/pokemon/', (req, res)=>{
+    pokemon.create(req.body, (error, createdFruit)=>{
+        res.redirect('/fruits');
+    });
+});
+
 app.get('/pokemon/:id', (req, res) => {
     res.render('Show', {
         pokemon: pokemon[req.params.id]
