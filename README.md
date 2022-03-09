@@ -1,6 +1,6 @@
 # Poke-Express
  Make a Pokemon app that displays data inside server-side rendered views
-
+-----------------------------------
 
 When a user goes to the /pokemon route they will see an index of pokemon: the names of each pokemon rendered to the page.
 When a user clicks on the name of the pokemon, they will be taken to that pokemon's SHOW page, and will see the pokemon's name and image.
@@ -11,5 +11,6 @@ When a user goes to the SHOW page there will be two buttons:
 
 
 Assignment
+
     Add Edit, Update and Delete functionality to your pokemon app
     Deploy your Pokemon App to Heroku at it's final complete form
