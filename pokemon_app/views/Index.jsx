@@ -1,6 +1,5 @@
 const React = require('react');
 
-
 class Index extends React.Component {
     render() {
         const { pokemon } = this.props;
@@ -10,21 +9,19 @@ class Index extends React.Component {
             textTransform: 'capitalize'
         };     
         return (
-          <div style={myStyle}>
-              <h1>See All The Pokemon!</h1>
-              <ul>
-                    {pokemon.map((pokemon, i) => {
-                        return (
-                            <li>
-                            <a href={`/pokemon/${i}`}>
-                            { pokemon.name }
-                            </a>
+            <div style={myStyle}>
+                <h1>See All The Pokemon!</h1>
+                <ul>
+                    {
+                        this.props.pokemon.map((pokemon, i) => {
+                        return <li key={i}>
+                            <a href={`/pokemon/${pokemon.id}`}> { pokemon.name } </a>
                             </li>
-                        );
-                    })}
+                        })
+                    }
                 </ul>
                 <nav>
-                    <a href="/pokemon/new">Add a Pokemon</a>
+                    <a href="/pokemon/new">Add another Pokemon</a>
                 </nav>
             </div>
           )  
