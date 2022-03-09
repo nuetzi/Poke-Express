@@ -15,6 +15,10 @@ class Show extends React.Component {
                 <img src={pokemon.img + '.jpg'}></img>
                 <br/>
                 <br/>
+                <form action={`/pokemon/${pokemon._id}/edit`}>
+                <input type="submit" value="EDIT"/>
+                </form>
+                <br/>
                 <a href={`/pokemon/${pokemon.id}/edit`}>Edit This Pokemon</a>
                 <form action={`/pokemon/${pokemon._id}?_method=DELETE`} method="POST">
                 <input type="submit" value="DELETE"/>
