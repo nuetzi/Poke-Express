@@ -15,7 +15,7 @@ class Show extends React.Component {
                 <img src={pokemon.img + '.jpg'}></img>
                 <br/>
                 <br/>
-                <form action={`/pokemon/${pokemon._id}/edit`} method="POST">
+                <form action={`/pokemon/${pokemon._id}/edit`} method="GET">
                 <input type="submit" value="EDIT"/>
                 </form>
                 <br/>
