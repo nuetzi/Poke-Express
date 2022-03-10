@@ -1,5 +1,8 @@
 # Poke-Express
- Make a Pokemon app that displays data inside server-side rendered views
+ "Make a Pokemon app that displays data inside server-side rendered views"
+ 
+-----------------------------------
+NOTE: All files and code will continue to be pushed to GitHub. However, the project and its functionality can best be viewed at https://nuetzipokemon.herokuapp.com/pokemon
 -----------------------------------
 
 User Stories
