@@ -7,7 +7,6 @@ class New extends React.Component {
             <DefaultLayout title="Add a Pokemon">
             <div>
             <link rel="stylesheet" href="/css/app.css"/>
-                <h1>Add a New Pokemon</h1>
                 <form action='/pokemon' method='POST'>
                     Name: <input type='text' name='name' />
                     <br/>

@@ -4,7 +4,7 @@ const DefaultLayout = require('./layout/Default.jsx')
 class Edit extends React.Component{
   render() {
     return (
-      <DefaultLayout title="Edit Page">
+      <DefaultLayout title="Edit Pokemon Info">
         <link rel="stylesheet" href="/css/app.css"/>      
         {/* The Layout takes in a prop called Title and we pass the Edit Page to it */}
         <form action={`/pokemon/${this.props.pokemon._id}?_method=PUT`} method="POST">

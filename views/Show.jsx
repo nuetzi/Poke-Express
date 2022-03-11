@@ -5,13 +5,13 @@ class Show extends React.Component {
     render () {
         const pokemon = this.props.pokemon
         const myStyle = {
-            textTransform: 'capitalize'
+            textTransform: 'capitalize',
+            textAlign: center
         };
         return (
-            <DefaultLayout title={pokemon.name}>
+            <DefaultLayout title="Gotta Catch 'Em All!">
             <div style={myStyle}>
                 <link rel="stylesheet" href="/css/app.css"/>
-                <h1>Gotta Catch 'Em All!</h1>
                 <h2> {pokemon.name} </h2>
                 <img src={pokemon.img + '.jpg'}></img>
                 <br/>
