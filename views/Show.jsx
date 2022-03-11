@@ -4,8 +4,6 @@ class Show extends React.Component {
     render () {
         const pokemon = this.props.pokemon
         const myStyle = {
-            color: '#ffffff',
-            backgroundColor: '#000000',
             textTransform: 'capitalize'
         };
         return (
