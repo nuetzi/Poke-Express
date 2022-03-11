@@ -6,7 +6,7 @@ class Show extends React.Component {
         const pokemon = this.props.pokemon
         const myStyle = {
             textTransform: 'capitalize',
-            textAlign: center
+            textAlign: 'center'
         };
         return (
             <DefaultLayout title="Gotta Catch 'Em All!">
