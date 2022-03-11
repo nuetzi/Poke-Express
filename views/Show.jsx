@@ -1,4 +1,5 @@
-const React = require('react')
+const React = require('react');
+const DefaultLayout = require('./layout/Default.jsx')
 
 class Show extends React.Component {
     render () {
@@ -7,6 +8,7 @@ class Show extends React.Component {
             textTransform: 'capitalize'
         };
         return (
+            <DefaultLayout title={pokemon.name}>
             <div style={myStyle}>
                 <link rel="stylesheet" href="/css/app.css"/>
                 <h1>Gotta Catch 'Em All!</h1>
@@ -25,8 +27,9 @@ class Show extends React.Component {
                 <br/>
                 <a href='/pokemon'>Back</a>
             </div>
+            </DefaultLayout>
         );
-    }
+    };
 };
 
 module.exports  = Show;

@@ -1,9 +1,12 @@
 const React = require('react');
+const DefaultLayout = require('./layout/Default.jsx')
 
 class New extends React.Component {
     render() {
         return (
+            <DefaultLayout title="Add a Pokemon">
             <div>
+            <link rel="stylesheet" href="/css/app.css"/>
                 <h1>Add a New Pokemon</h1>
                 <form action='/pokemon' method='POST'>
                     Name: <input type='text' name='name' />
@@ -14,6 +17,7 @@ class New extends React.Component {
                     <input type='submit' name='' value='Create Pokemon' />
                 </form>
             </div>
+            </DefaultLayout>
         );
     };
 };
