@@ -4,12 +4,11 @@ class Index extends React.Component {
     render() {
         const { pokemon } = this.props;
         const myStyle = {
-            color: '#ffffff',
-            backgroundColor: '#000000',
             textTransform: 'capitalize'
         };     
         return (
             <div style={myStyle}>
+                <link rel="stylesheet" href="/css/app.css"/>
                 <h1>See All The Pokemon!</h1>
                 <ul>
                     {

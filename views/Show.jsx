@@ -10,6 +10,7 @@ class Show extends React.Component {
         };
         return (
             <div style={myStyle}>
+                <link rel="stylesheet" href="/css/app.css"/>
                 <h1>Gotta Catch 'Em All!</h1>
                 <h2> {pokemon.name} </h2>
                 <img src={pokemon.img + '.jpg'}></img>
